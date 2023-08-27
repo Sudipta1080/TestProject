@@ -1,8 +1,9 @@
 import java.util.*;
 
-public class Factorial{
+public class Factorial implements FactorialInterface{
 
 
+    @Override
     public int factorial(int fact) {
         if(fact >= 0) {
             if (fact > 1) {
@@ -21,13 +22,13 @@ public class Factorial{
         }
     }
 
-//    public static void main(String[] args) {
-//        int number, result;
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter The Number : ");
-//        number = sc.nextInt();
-//
-//        result = new Factorial().factorial(number);
-//        System.out.println("Factorial is : "+result );
-//    }
+    public static void main(String[] args) {
+        int number, result;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter The Number : ");
+        number = sc.nextInt();
+
+        result = new Factorial().factorial(number);
+        System.out.println("Factorial is : "+result );
+    }
 }

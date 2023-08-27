@@ -36,25 +36,25 @@ public class BinarySearch {
             return "Not Found";
         }
     }
-//    public static void main(String[] args) {
-//        int[] numbers;
-//        int noOfElements, searchElement;
-//        String Result;
-//
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter How Many Number you want to insert : ");
-//        noOfElements = sc.nextInt();
-//        numbers = new int[noOfElements];
-//        System.out.println("Enter the Numbers : ");
-//        for (int i = 0; i < noOfElements; i++) {
-//            numbers[i] = sc.nextInt();
-//        }
-//        System.out.println("Enter the element what you need to search : ");
-//        searchElement = sc.nextInt();
-////        Result = binarySearch(numbers,searchElement);
-//        Result = binarySearch1(numbers,searchElement,0,numbers.length+1);
-//        System.out.println(Result);
-//
-//        sc.close();
-//    }
+    public static void main(String[] args) {
+        int[] numbers;
+        int noOfElements, searchElement;
+        String Result;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter How Many Number you want to insert : ");
+        noOfElements = sc.nextInt();
+        numbers = new int[noOfElements];
+        System.out.println("Enter the Numbers : ");
+        for (int i = 0; i < noOfElements; i++) {
+            numbers[i] = sc.nextInt();
+        }
+        System.out.println("Enter the element what you need to search : ");
+        searchElement = sc.nextInt();
+//        Result = binarySearch(numbers,searchElement);
+        Result = binarySearch1(numbers,searchElement,0,numbers.length+1);
+        System.out.println(Result);
+
+        sc.close();
+    }
 }
